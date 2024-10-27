@@ -3,10 +3,8 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaMoon } from 'react-icons/fa';
 import { FaDigitalOcean } from "react-icons/fa";
-
 const Header = () => {
   const path = useLocation().pathname; 
-
   return (
     <div className="border-b-2">
       <Navbar className='max-w-[1000px] mx-auto'>
@@ -23,10 +21,8 @@ const Header = () => {
               Sign In
             </Button>
           </Link>
-
           <Navbar.Toggle />
         </div>
-
         <Navbar.Collapse className="text-black md:flex md:items-center">
           <Navbar.Link className={path === '/' ? 'text-blue-500' : 'text-black'} as={'div'}>
             <Link to='/' className='block py-2 pr-4 pl-3 md:p-0'>Home</Link>
@@ -46,5 +42,4 @@ const Header = () => {
     </div>
   );
 }
-
 export default Header;
