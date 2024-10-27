@@ -1,45 +1,79 @@
-import { Button, Navbar } from 'flowbite-react';
+import { Avatar, Button, Dropdown, DropdownDivider, Navbar } from 'flowbite-react';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaMoon } from 'react-icons/fa';
-import { FaDigitalOcean } from "react-icons/fa";
+import { useSelector } from 'react-redux';
+
 const Header = () => {
   const path = useLocation().pathname; 
+  const currentUser = useSelector(state => state.user)
+
   return (
     <div className="border-b-2">
-      <Navbar className='max-w-[1000px] mx-auto'>
-        <Link to='/' className='self-center whitespace-nowrap flex gap-2 text-sm sm:text-xl font-semibold dark:text-white'>
-        <FaDigitalOcean className='mt-1' />DAgency
+      <Navbar className='max-w-[1000px] mx-auto flex justify-between items-center'>
+        <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
+          Abdul
         </Link>
+        
         <div className="flex gap-2 md:order-2">
-          <Button className='w-12 h-10 hidden sm:inline' color='gray' pill>
+          <Button className='w-12 h-10 inline' color='gray' pill>
             <FaMoon />
           </Button>
-          
-          <Link to='/sign-in'>
-            <Button gradientDuoTone='purpleToBlue'>
+
+          {currentUser ? (
+            <Dropdown
+            arrowIcon={false}
+            inline={true}
+            label={
+              <Avatar
+              alt="User"
+              img={currentUser.profilePitcture}
+              rounded={true}
+              />
+            }
+            >
+              <Dropdown.Header>
+                <span className='block text-sm'>@{currentUser.username}</span>
+                <span className='block text-sm font-medium truncate'>{currentUser.email}</span>
+              </Dropdown.Header>
+              <Link to='/dashboard?tab=profile'>
+              <Dropdown.Item>Profile</Dropdown.Item>
+              </Link>
+              <DropdownDivider />
+              <Link to='/sign-out'>
+              <Dropdown.Item>Sign Out</Dropdown.Item>
+              </Link>
+            </Dropdown>
+          ) : (
+            <Link to='/sign-in'>
+            <Button gradientDuoTone='purpleToBlue' outline>
               Sign In
             </Button>
           </Link>
+          )}
+          
+          
+
           <Navbar.Toggle />
         </div>
-        <Navbar.Collapse className="text-black md:flex md:items-center">
-          <Navbar.Link className={path === '/' ? 'text-blue-500' : 'text-black'} as={'div'}>
-            <Link to='/' className='block py-2 pr-4 pl-3 md:p-0'>Home</Link>
+
+        <Navbar.Collapse className="md:max-w-20 text-black md:flex md:items-center">
+          <Navbar.Link active={path === '/'} as='div'>
+            <Link to='/' className={path === '/' ? 'text-blue-500 block py-2 pr-4 pl-3 md:p-0' : 'text-black block py-2 pr-4 pl-3 md:p-0'}>Home</Link>
           </Navbar.Link>
-          <Navbar.Link className={path === '/services' ? 'text-blue-500' : 'text-black'} as={'div'}>
-            <Link to='/services' className='block py-2 pr-4 pl-3 md:p-0'>Services</Link>
+          <Navbar.Link active={path === '/services'} as='div'>
+            <Link to='/services' className={path === '/services' ? 'text-blue-500 block py-2 pr-4 pl-3 md:p-0' : 'text-black block py-2 pr-4 pl-3 md:p-0'}>Services</Link>
           </Navbar.Link>
-          <Navbar.Link className={path === '/team' ? 'text-blue-500' : 'text-black'} as={'div'}>
-            <Link to='/team' className='block py-2 pr-4 pl-3 md:p-0'>Team</Link>
+          <Navbar.Link active={path === '/team'} as='div'>
+            <Link to='/team' className={path === '/team' ? 'text-blue-500 block py-2 pr-4 pl-3 md:p-0' : 'text-black block py-2 pr-4 pl-3 md:p-0'}>Team</Link>
           </Navbar.Link>
-          <Navbar.Link className={path === '/contact' ? 'text-blue-500' : 'text-black'} as={'div'}>
-            <Link to='/contact' className='block py-2 pr-4 pl-3 md:p-0'>Contact</Link>
+          <Navbar.Link active={path === '/contact'} as='div'>
+            <Link to='/contact' className={path === '/contact' ? 'text-blue-500 block py-2 pr-4 pl-3 md:p-0' : 'text-black block py-2 pr-4 pl-3 md:p-0'}>Contact</Link>
           </Navbar.Link>
-          
         </Navbar.Collapse>
       </Navbar>
     </div>
   );
 }
+
 export default Header;
