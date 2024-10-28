@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard'
 import Header from './components/Header'
 import PrivateRoute from './components/PrivateRoute'
 import WebDesign from './pages/WebDesign'
+import SEO from './pages/SEO'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/sign-up" element={<SignUp />} />
 
             <Route path="/services/web-design" element={<WebDesign />} />
+            <Route path="/services/search-engine-optimization" element={<SEO />} />
 
             <Route element={<PrivateRoute />} >
               <Route path='/dashboard' element={<Dashboard />} />
