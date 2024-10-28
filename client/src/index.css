@@ -26,8 +26,25 @@ body{
     width: 100%;
   }
 
+
   .services{
     background-image: url('./assets/heroset.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .contact{
+    background-image: url('./assets/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .contus{
+    background-image: url('./assets/contact2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
