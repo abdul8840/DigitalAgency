@@ -13,31 +13,31 @@ const Services = () => {
             icon: <HiOutlineDesktopComputer className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Web Design",
             desc: "Your website is your digital storefront—make it memorable. Our web design services prioritize user experience, mobile responsiveness, and sleek aesthetics to create websites that not only attract visitors but also keep them engaged. From clean, minimalist designs to rich, interactive layouts, we ensure your site truly represents your brand.",
-            link: "/web-design"
+            link: "/services/web-design"
         },
         {
             icon: <TbWorldSearch className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Search Engine Optimization",
             desc: "Be visible where it matters. Our SEO services help your business rank higher on search engines, driving organic traffic and maximizing visibility. Through targeted keyword research, optimized content, and technical SEO enhancements, we help you achieve and maintain top rankings, bringing you closer to your ideal audience.",
-            link: "/search-engine-optimization"
+            link: "/services/search-engine-optimization"
         },
         {
             icon: <RiAdvertisementFill className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Pay Per Click Advertising",
             desc: "Get instant traffic with tailored PPC campaigns. We create targeted ads that reach the right audience at the right time, maximizing your ad spend and boosting conversions. Whether through Google Ads, Bing, or social platforms, our PPC services ensure every click counts.",
-            link: "/pay-per-click-advertising"
+            link: "/services/pay-per-click-advertising"
         },
         {
             icon: <MdMarkEmailUnread className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Email & SMS Marketing",
             desc: "Stay connected with your customers. Our Email and SMS marketing solutions allow you to engage directly with your audience through tailored messages, offers, and updates. Build loyalty, increase brand awareness, and drive consistent engagement with personalized, data-driven campaigns.",
-            link: "/email-and-sms-marketing"
+            link: "/services/email-and-sms-marketing"
         },
         {
             icon: <MdGroups className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Social Media Marketing",
             desc: "Build your brand presence where it matters most. With our social media marketing services, we help you reach, engage, and grow your audience across platforms like Facebook, Instagram, Twitter, and LinkedIn. From content creation to targeted ads, we help amplify your voice in the digital space.",
-            link: "/social-media-marketing"
+            link: "/services/social-media-marketing"
         },
         
     ]

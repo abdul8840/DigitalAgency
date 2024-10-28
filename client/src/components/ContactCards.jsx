@@ -29,8 +29,8 @@ const ContactCards = () => {
             {infodata.map((item, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg p-5 w-[300px] text-center flex flex-col">
                 {item.icon}
-                <h3 className='text-2xl font-bold mb-3'>{item.head}</h3>
-                <h4>{item.info}</h4>
+                <h3 className='text-2xl font-bold mb-3 text-black'>{item.head}</h3>
+                <h4 className='text-black'>{item.info}</h4>
             </div>
             ))}
         </div>

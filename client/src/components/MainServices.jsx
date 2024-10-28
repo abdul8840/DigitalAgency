@@ -15,31 +15,31 @@ const MainServices = () => {
             icon: <HiOutlineDesktopComputer className='text-6xl text-purple-500 hover:text-white' />,
             head: "Web Design",
             desc: <ul className='flex flex-col gap-2 text-start'><li>WordPress Design</li><li>Magento Design</li><li>Shopify Design</li> <li>Custom Development</li><li>Site Maintenance</li></ul>,
-            link: "/web-design"
+            link: "/services/web-design"
         },
         {
             icon: <TbWorldSearch className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Search Engine Optimization",
             desc: <ul className='flex flex-col gap-2 text-start'><li>National SEO</li><li>Technical SEO Audit</li><li>Local SEO</li> <li>Ecommerce SEO</li><li>Franchise SEO</li> <li>Blogging</li></ul>,
-            link: "/search-engine-optimization"
+            link: "/services/search-engine-optimization"
         },
         {
             icon: <RiAdvertisementFill className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Pay Per Click Advertising",
             desc: <ul className='flex flex-col gap-2 text-start'><li>Ecommerce</li><li>Remarketing</li><li>Facebook Ads</li> <li>Google Ads</li><li>Landing Pages</li></ul>,
-            link: "/pay-per-click-advertising"
+            link: "/services/pay-per-click-advertising"
         },
         {
             icon: <MdMarkEmailUnread className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Email & SMS Marketing",
             desc: <ul className='flex flex-col gap-2 text-start'><li>Email Newsletters</li><li>Marketing Automation</li><li>Mailchimp Experts</li> <li>SMS Marketing</li><li>Klaviyo Experts</li></ul>,
-            link: "/email-and-sms-marketing"
+            link: "/services/email-and-sms-marketing"
         },
         {
             icon: <MdGroups className='max-w-full m-auto text-6xl text-purple-500 hover:text-white' />,
             head: "Social Media Marketing",
             desc: <ul className='flex flex-col gap-2 text-start'><li>LinkedIn Management</li><li>Facebook & IG</li><li>Video & TikTok</li> <li>Twitter Management</li><li>Influencer Marketing</li></ul>,
-            link: "/social-media-marketing"
+            link: "/services/social-media-marketing"
         },
         
     ]
