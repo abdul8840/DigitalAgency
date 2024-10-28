@@ -4,6 +4,7 @@ import HomeContent from '../components/HomeContent'
 import Services from '../components/Services'
 import Banner from '../components/Banner'
 import Accbanner from '../components/Accbanner'
+import FAQ from '../components/FAQ'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeContent />
       <Services />
       <Accbanner />
+      <FAQ />
     </div>
   )
 }
