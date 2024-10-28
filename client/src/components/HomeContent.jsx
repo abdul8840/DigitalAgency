@@ -40,7 +40,7 @@ const HomeContent = () => {
         },
     ]
   return (
-    <div className='mt-10'>
+    <div className='mt-10 mx-4'>
       <h2 className='text-center text-4xl font-bold'>Why Your Business Needs Digital Marketing Services?</h2>
       <div className="flex flex-wrap gap-5 justify-center mt-10">
         {Ddata.map((item, index) => (

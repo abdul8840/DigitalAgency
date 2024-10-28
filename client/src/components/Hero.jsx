@@ -5,7 +5,8 @@ import { FaSearchDollar } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[90vh] py-10 flex flex-col md:flex-row items-center gap-10 md:gap-20 border-b-2 border-gray-400">
+    <div className="max-w-[1200px] mx-auto p-3">
+    <div className="w-full min-h-[90vh] py-10 flex flex-col md:flex-row items-center gap-10 md:gap-20 ">
       {/* leftside */}
       <div className="flex-1 order-1 md:order-none">
         <span className="text-lg text-gray-500 block mb-1">Grow Your Business With Scalable Digital Marketing</span>
@@ -16,22 +17,22 @@ const Hero = () => {
         Get more traffic. Acquire more customers. Sell more stuff. SmartSites offers proven strategies & reliable execution to exceed your marketing goals.
         </p>
         <div className="flex gap-5 flex-wrap mt-5">
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">SEO</span>
             </div>
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">PPC</span>
             </div>
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">SMM</span>
             </div>
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">Web Design</span>
             </div>
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">Email Marketing</span>
             </div>
-            <div className="flex gap-2 items-center border-2 border-black py-1 px-3 text-black rounded-full">
+            <div className="flex gap-2 items-center border-2 border-black dark:border-white py-1 px-3 text-black dark:text-white rounded-full">
             <FaSearchDollar /> <span className="font-semibold">Google Analytics</span>
             </div>
         </div>
@@ -47,6 +48,7 @@ const Hero = () => {
           className="home-img border-4 dark:border-gray-600"
         />
       </div>
+    </div>
     </div>
   );
 };
