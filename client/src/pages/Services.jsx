@@ -1,9 +1,14 @@
 import React from 'react'
+import ServiceHero from '../components/ServiceHero'
+import MainServices from '../components/MainServices'
+import ServiceContent from '../components/ServiceContent'
 
 const Services = () => {
   return (
     <div>
-      Services
+      <ServiceHero />
+      <MainServices />
+      <ServiceContent />
     </div>
   )
 }
