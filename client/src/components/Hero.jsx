@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
         </div>
         <Link to='/contact'>
-        <button className="flex gap-2 py-4  bg-[#222] hover:bg-[#111] text-white dark:bg-white dark:text-black font-bold px-8 rounded-[20px] mt-8 md:mt-10 text-2xl">Say Hii</button>
+        <button className="flex gap-2 py-4  bg-[#222] hover:bg-[#111] text-white dark:bg-white dark:text-black font-bold px-8 rounded-[20px] mt-8 md:mt-10 text-2xl">Start Boosting</button>
         </Link>
       </div>
       {/* right side */}
@@ -45,7 +45,7 @@ const Hero = () => {
         <img
           src={HeroImg}
           alt=""
-          className="home-img border-4 dark:border-gray-600"
+          className="home-img border-4 dark:border-gray-600 object-cover"
         />
       </div>
     </div>

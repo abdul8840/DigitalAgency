@@ -14,6 +14,7 @@ import SEO from './pages/SEO'
 import PPC from './pages/PPC'
 import EmailMark from './pages/EmailMark'
 import SocialMark from './pages/SocialMark'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
             </Route>
 
         </Routes>
+        <Footer />
     </BrowserRouter>
   )
 }
