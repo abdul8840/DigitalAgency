@@ -11,6 +11,8 @@ import Header from './components/Header'
 import PrivateRoute from './components/PrivateRoute'
 import WebDesign from './pages/WebDesign'
 import SEO from './pages/SEO'
+import PPC from './pages/PPC'
+import EmailMark from './pages/EmailMark'
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
 
             <Route path="/services/web-design" element={<WebDesign />} />
             <Route path="/services/search-engine-optimization" element={<SEO />} />
+            <Route path="/services/pay-per-click-advertising" element={<PPC />} />
+            <Route path="/services/email-and-sms-marketing" element={<EmailMark />} />
 
             <Route element={<PrivateRoute />} >
               <Route path='/dashboard' element={<Dashboard />} />
