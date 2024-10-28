@@ -13,6 +13,7 @@ import WebDesign from './pages/WebDesign'
 import SEO from './pages/SEO'
 import PPC from './pages/PPC'
 import EmailMark from './pages/EmailMark'
+import SocialMark from './pages/SocialMark'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/services/search-engine-optimization" element={<SEO />} />
             <Route path="/services/pay-per-click-advertising" element={<PPC />} />
             <Route path="/services/email-and-sms-marketing" element={<EmailMark />} />
+            <Route path="/services/social-media-marketing" element={<SocialMark />} />
 
             <Route element={<PrivateRoute />} >
               <Route path='/dashboard' element={<Dashboard />} />
