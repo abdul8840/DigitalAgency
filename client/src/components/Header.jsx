@@ -5,6 +5,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import {toggleTheme} from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
+import Logo from '../assets/logo.png'
 
 const Header = () => {
   const path = useLocation().pathname; 
@@ -31,8 +32,8 @@ const Header = () => {
   return (
     <div className="border-b-2">
       <Navbar className='max-w-[1000px] mx-auto flex justify-between items-center'>
-        <Link to='/' className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-          Abdul
+        <Link to='/' className='flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
+          <span className='border border-blue-500 text-blue-500 text-lg rounded-lg p-[1px]'>MetLife</span> DM
         </Link>
         
         <div className="flex gap-2 md:order-2">
