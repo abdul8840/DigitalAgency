@@ -5,7 +5,6 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import {toggleTheme} from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
-import Logo from '../assets/logo.png'
 
 const Header = () => {
   const path = useLocation().pathname; 

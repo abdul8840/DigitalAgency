@@ -48,19 +48,16 @@ const SignUp = () => {
       <div className="flex gap-5 p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center">
         {/* leftside */}
         <div className="flex-1">
-          <span className="text-xl text-gray-500 block mb-1">Hello, I Am</span>
-          <Link to="/" className="font-bold dark:text-white text-4xl">
-            Abdul Rahman
-          </Link>
+          <span className="text-xl text-gray-500 block mb-2">Welcome To,</span>
+          <Link
+              to='/'
+              className='self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'
+            >
+              <span className='border border-blue-500 text-blue-500 text-4xl rounded-lg p-[1px]'>MetLife</span><span className='text-4xl'>DM</span>
+            </Link>
           <p className="text-sm mt-5 font-[500] text-gray-500">
-            I'm a creative web designer based in Maharastra India, and i'm very
-            passionate and dedicated to my work.
+          Be seen, rank higher, and attract more customers. Stay connected with messages that inspire action
           </p>
-          <div className="mt-8 flex justify-start text-3xl gap-6 dark:text-white">
-          <Link to=''><FaGithub /></Link>
-          <Link to=''><FaLinkedin /></Link>
-          <Link to=''><FaDiscord /></Link>
-          </div>
         </div>
         {/* rightside */}
         <div className="flex-1">
