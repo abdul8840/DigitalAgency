@@ -32,8 +32,8 @@ const Header = () => {
   return (
     <div className="border-b-2">
       <Navbar className='max-w-[1000px] mx-auto flex justify-between items-center'>
-        <Link to='/' className='flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
-          <span className='border border-blue-500 text-blue-500 text-lg rounded-lg p-[1px]'>MetLife</span> DM
+        <Link to='/' className='flex self-center items-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
+          <span className='border border-blue-500 text-blue-500 text-lg rounded-lg p-[1px]'>MetLife</span> <span className='text-lg'>DM</span>
         </Link>
         
         <div className="flex gap-2 md:order-2">
@@ -41,7 +41,7 @@ const Header = () => {
             {theme === 'light' ? <FaSun /> : <FaMoon />}
           </Button>
 
-          {currentUser ? (
+          {/* {currentUser ? (
             <Dropdown
             arrowIcon={false}
             inline={true}
@@ -71,7 +71,7 @@ const Header = () => {
               Sign In
             </Button>
           </Link>
-          )}
+          )} */}
           
           
 

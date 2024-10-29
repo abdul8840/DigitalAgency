@@ -13,7 +13,7 @@ const ContactCards = () => {
         {
             icon: <MdEmail className='mx-auto text-6xl text-purple-500 mb-2' />,
             head: "Email",
-            info: "abcd1234@gmail.com",
+            info: "metlifedm4u@gmail.com",
         },
         {
             icon: <MdAddCall className='mx-auto text-6xl text-purple-500 mb-2' />,

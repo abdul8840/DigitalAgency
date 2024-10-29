@@ -11,7 +11,7 @@ const FooterCom = () => {
           <div className='mt-5'>
             <Link
               to='/'
-              className='self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'
+              className='flex justify-center mb-3 self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'
             >
               <span className='border border-blue-500 text-blue-500 text-4xl rounded-lg p-[1px]'>MetLife</span><span className='text-4xl'>DM</span>
             </Link>
